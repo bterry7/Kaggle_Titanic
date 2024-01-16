@@ -1,0 +1,20 @@
+Task: Create models for the Titanic Kaggle Competition using 3 methods
+	Method 1: Following the pinned "Titanic Tutorial" on the code tab of the competition's page
+	Method 2: Random Forest Approach discussed in the "Intro to Machine Learning" Course
+	Method 3: Nueral Netwrok Approach discussed in the "Intro to Deep Learning" Course
+
+Goals: Make it work. First project, interested more making sure everythign I'm learnign works on my computer
+
+Process Notes:
+Added some preprocessing, so I wasn't completely copying and pasting
+	Added and "Age" and "Embarked" as fields to be used for training
+	For "Embarked" only 2 values had NaN, so removed
+	For "Age" replaced NaNs with average based on other criteria. If there were no other records that matched all criteria, default to just sex
+
+Since I'm following tutorials, that's the only notes
+See the tutorials for more in-depth notes
+
+Conclusions:
+ - Need to take a pandas and numpy short-course. Matplotlib too, probably
+ - The Neural Network labeled everythign 0. Checking the val accuracy during training, it trended toward the overall survival rate. That is, if found the most accurate approach was to assume death. I'm guessing I should play with the parameters
+ - Used a cheat from excel while preprocessing. To filter by every field at once (to get average age), I created an extra field with all of them combined and filtered using that. I then dropped this column before training. Is there a more elegant/built-in Pandas way to do this?
